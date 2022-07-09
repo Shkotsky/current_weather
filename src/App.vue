@@ -4,7 +4,7 @@
       <input
         v-model.lazy="search"
         placeholder="Search for a city"
-        @change="findMe"
+        @change="findMe" 
       />
     </form>
     <div v-if="errorMessage" class="error">
