@@ -1,11 +1,7 @@
 <template>
   <div v-if="location">
     <form @submit.prevent="">
-      <input
-        v-model.lazy="search"
-        placeholder="Search for a city"
-        @change="findMe" 
-      />
+      <input v-model.lazy="search" placeholder="Search for a city" @change="findMe" />
     </form>
     <div v-if="errorMessage" class="error">
       {{ errorMessage }}
@@ -143,6 +139,7 @@ input {
     padding: 0 30px;
     height: 0;
   }
+
   to {
     height: 385px;
   }
@@ -199,13 +196,16 @@ span {
     opacity: 0;
     transform: translateY(15px);
   }
+
   50% {
     opacity: 0;
     transform: translateY(15px);
   }
+
   99% {
     animation-play-state: paused;
   }
+
   100% {
     opacity: 1;
   }
