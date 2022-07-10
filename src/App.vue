@@ -28,8 +28,7 @@
 import axios from "axios";
 import { ref } from "@vue/reactivity";
 
-const keyAPI = process.env.VUE_APP_API_KEY;
-const baseURL = process.env.VUE_APP_BASE_URL;
+const baseURL = process.env.VUE_APP_SECRET_KEY;
 
 const search = ref(null);
 const temp = ref(null);
@@ -70,12 +69,10 @@ const setLocation = (point) => {
 };
 
 const getWeather = async () => {
-  console.log(keyAPI)
   try {
     const response = await axios.get(
-      `${baseURL}${keyAPI}&q=${location.value}`
+      `${baseURL}${location.value}`
     );
-    console.log(response.data);
 
     temp.value = Math.round(response.data.current.temp_c);
     wind.value = response.data.current.wind_kph;
