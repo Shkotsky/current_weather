@@ -40,7 +40,10 @@
 ```
 yarn install
 ```
-
+### Get your own API key 
+```
+https://www.weatherapi.com/
+```
 ### Compiles and hot-reloads for development
 ```
 yarn serve
