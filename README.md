@@ -1,26 +1,4 @@
-
-# weather_api
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-# Current weather API :cloud_with_lightning_and_rain:
+# Current Weather API :cloud_with_lightning_and_rain:
 
 ## Table of contents
 
@@ -30,6 +8,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+- [Project setup](#project-setup)
 - [Author](#author)
 
 ## Overview
@@ -56,6 +35,25 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - JavaScript
 - Fetch API
 - Vue 3
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
 
 ## Author
 
